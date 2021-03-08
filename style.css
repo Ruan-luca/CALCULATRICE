@@ -10,7 +10,8 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    flex-direction: column; 
     font-family: sans-serif; 
     background: linear-gradient(to right, rgb(47, 10, 255), rgb(162, 231, 248, 50%));
 }
@@ -20,9 +21,7 @@ body{
     flex-direction: column;
     background-color: lightblue;
     padding: 10px;
-    border-radius: 5px;
-    margin-right: 100px;
-    
+    border-radius: 5px;  
 }
 
 .ecran{
@@ -76,6 +75,15 @@ body{
 
 .pen{
    color: white;
-   margin-bottom: 600px;
+   margin-bottom: 50px;
    text-transform: capitalize;
+   font-size: 25px;
+}
+
+@media only screen and (max-width: 1125px){
+    .calculatrice{
+        transform: scale(1.25);
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
 }
